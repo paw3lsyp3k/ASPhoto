@@ -1,0 +1,431 @@
+@import url(./menu.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #D478B5;
+}
+
+#wrapper1 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg1.png);
+  background-position: bottom;
+  background-size: cover;
+  /*go up button */
+}
+
+#wrapper1 #w1content {
+  width: 50%;
+  height: 80%;
+  margin-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*Title*/
+  /*Description*/
+  /*Call to action*/
+}
+
+#wrapper1 #w1content h1 {
+  font-size: 4.5vmax;
+  line-height: 6vmax;
+  color: black;
+  font-weight: 400;
+}
+
+#wrapper1 #w1content h2 {
+  width: 60%;
+  margin-top: 3%;
+  color: black;
+  font-weight: 300;
+}
+
+#wrapper1 #w1content .w1buttons {
+  width: 25vmax;
+  height: 4vmax;
+  margin-top: 10%;
+  background-color: tan;
+}
+
+#wrapper1 #arrowup {
+  width: 3vmax;
+  height: 3vmax;
+  position: fixed;
+  background-color: white;
+  right: 2vmax;
+  border-radius: 50%;
+  top: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  translate: transformY(-50%);
+  -webkit-box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+#wrapper1 #arrowup img {
+  width: 1.6vmax;
+  height: 1.6vmax;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.wrapper2 {
+  width: 100%;
+  padding-top: 7vmax;
+  padding-bottom: 7vmax;
+  background-image: url(../img/bg2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper2 h3 {
+  width: 50%;
+  font-size: 1.4vmax;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+}
+
+.wrapper2 h2 {
+  font-size: 1.8vmax;
+  font-weight: 400;
+  margin: 1vmax auto;
+  text-align: center;
+  color: #D478B5;
+}
+
+.wrapper3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bg3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper3 .w3content {
+  width: 53%;
+  height: 100%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper3 .w3content h1 {
+  font-weight: 500;
+  font-size: 4.2vmax;
+}
+
+.wrapper3 .w3content h2 {
+  margin-top: 3vmax;
+  font-weight: 300;
+  width: 67%;
+  font-size: 1.2vmax;
+}
+
+.wrapper3 .w3content .w3button {
+  width: 10vmax;
+  text-align: center;
+  margin-top: 6vmax;
+  padding: 0.5vmax;
+  font-size: 1.5vmax;
+  background: black;
+  color: white;
+}
+
+.wrapper4 {
+  width: 100%;
+  height: 40vmax;
+  margin-top: 7%;
+  /*title */
+}
+
+.wrapper4 h1 {
+  text-align: center;
+  font-size: 2vmax;
+  font-weight: 400;
+  color: black;
+}
+
+.wrapper4 .w4container {
+  width: 80%;
+  height: 24vmax;
+  margin: 3vmax auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Next and prev btn */
+  /*Carousel */
+}
+
+.wrapper4 .w4container .w4spacer1,
+.wrapper4 .w4container .w4spacer2 {
+  width: 3vmax;
+  height: 3vmax;
+  display: none;
+}
+
+.wrapper4 .w4container .w4spacer1 {
+  display: block;
+}
+
+.wrapper4 .w4container .w4arrow1,
+.wrapper4 .w4container .w4arrow2 {
+  width: 3vmax;
+  height: 3vmax;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/icons/arrow.png);
+  cursor: pointer;
+}
+
+.wrapper4 .w4container .w4arrow1 {
+  display: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.wrapper4 .w4container .w4section {
+  width: 60vmax;
+  height: 26vmax;
+  overflow-x: hidden;
+  /* Dots under carousel*/
+}
+
+.wrapper4 .w4container .w4section .w4content {
+  width: 180vmax;
+  margin-top: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.wrapper4 .w4container .w4section .w4content .w4box {
+  width: 20vmax;
+  padding-top: 2vmax;
+  /*Comment */
+  /*author */
+}
+
+.wrapper4 .w4container .w4section .w4content .w4box p {
+  font-size: 1.1vmax;
+  text-align: center;
+  color: black;
+}
+
+.wrapper4 .w4container .w4section .w4content .w4box h3 {
+  text-align: center;
+  color: #D478B5;
+  margin-top: 2vmax;
+  font-size: 1.4vmax;
+  font-weight: 300;
+}
+
+.wrapper4 .w4container .w4section .w4dots {
+  width: 5vmax;
+  height: 1vmax;
+  margin: 5vmax auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrapper4 .w4container .w4section .w4dots .dot {
+  width: 1vmax;
+  height: 1vmax;
+  border-radius: 100%;
+  background-color: white;
+  border: 1px solid #D478B5;
+}
+
+.wrapper4 .w4container .w4section .w4dots #dot1 {
+  background-color: #D478B5;
+}
+
+.wrapper5 {
+  width: 100%;
+  height: 90vh;
+  padding-top: 2vmax;
+}
+
+.wrapper5 .w5bar {
+  width: 40%;
+  height: 5vmax;
+  margin-right: 60%;
+  border-top-right-radius: 3vmax;
+  border-bottom-right-radius: 3vmax;
+  background: #D478B5;
+  text-align: center;
+}
+
+.wrapper5 .w5bar h4 {
+  line-height: 5vmax;
+  color: white;
+  font-size: 2vmax;
+  font-weight: 300;
+}
+
+.wrapper5 .w5info {
+  width: 40%;
+  height: 60%;
+  margin-top: 8vmax;
+  text-align: center;
+  float: left;
+}
+
+.wrapper5 .w5info h1 {
+  font-weight: 400;
+  font-size: 2vmax;
+  margin-bottom: 6%;
+}
+
+.wrapper5 .w5info .w5items {
+  width: 55%;
+  text-align: left;
+  margin: 3vmax auto;
+}
+
+.wrapper5 .w5info .w5items h3 {
+  font-weight: 400;
+  font-size: 1.3vmax;
+  padding: 1vmax;
+}
+
+.wrapper5 .w5info .w5items h3 i {
+  margin-right: 2%;
+  font-size: 1.5vmax;
+}
+
+.wrapper5 .w5info .w5socials {
+  width: 60%;
+  height: 3vmax;
+  margin: auto;
+}
+
+.wrapper5 .w5info .w5socials .w5fb, .wrapper5 .w5info .w5socials .w5ig {
+  width: 42%;
+  height: 100%;
+  float: left;
+  margin-left: 5%;
+  background: lightcoral;
+  line-height: 3vmax;
+  font-size: 1.2vmax;
+  color: white;
+  cursor: pointer;
+}
+
+.wrapper5 .w5info .w5socials .w5fb {
+  background-color: #3b5998;
+}
+
+.wrapper5 .w5info .w5socials .w5ig {
+  background-color: #C13584;
+}
+
+.wrapper5 .w5form {
+  width: 30%;
+  margin-top: 3%;
+  margin-right: 15%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2vmax;
+  padding-bottom: 2vmax;
+  border-radius: 3vmax;
+  float: right;
+  border: 2px solid black;
+}
+
+.wrapper5 .w5form form input, .wrapper5 .w5form form textarea {
+  border: none;
+  background: white;
+  font-size: 1vmax;
+  height: 2.4vmax;
+  padding-right: 20px;
+  text-align: right;
+  color: black;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.wrapper5 .w5form form #field1 {
+  width: 40%;
+  float: left;
+}
+
+.wrapper5 .w5form form #field2 {
+  width: 40%;
+  margin-left: 20%;
+  float: right;
+}
+
+.wrapper5 .w5form form #field3 {
+  width: 100%;
+  margin-top: 2vmax;
+}
+
+.wrapper5 .w5form form #msg {
+  margin-top: 2vmax;
+  width: 100%;
+  height: 10vmax;
+  max-width: 100%;
+  max-height: 10vmax;
+  min-width: 100%;
+  min-height: 10vmax;
+}
+
+.wrapper5 .w5form form button {
+  padding: 0.7vmax 2vmax;
+  border: none;
+  background: green;
+  float: right;
+  font-size: 0.8vmax;
+  margin-right: 5%;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.wrapper6 {
+  width: 100%;
+  height: 3vmax;
+  background: #D478B5;
+}
+/*# sourceMappingURL=style.css.map */
